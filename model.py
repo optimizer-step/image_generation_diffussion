@@ -9,6 +9,7 @@ class ConvBlock(nn.Module):
         self.conv1 = nn.Conv2d(in_channels, out_channels, 3, padding = 1)
         self.conv2 = nn.Conv2d(out_channels, out_channels, 3, padding = 1)
         self.time_layer = nn.Linear(time_size, out_channels)
+        self.skip = nn.Conv2d(in_channels, out_channels, 1)
 
 
     def forward(self, image, time_embedding):
