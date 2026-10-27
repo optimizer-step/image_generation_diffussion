@@ -1,0 +1,8 @@
+# Install compatible GPU-enabled torch + torchvision FIRST (see README).
+matplotlib>=3.8
+numpy>=1.26
+pillow>=10.0
+jupyterlab>=4.2
+ipykernel>=6.29
+nbformat>=5.10
+tqdm>=4.66
